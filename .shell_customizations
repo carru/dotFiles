@@ -1,6 +1,6 @@
 ## qol
 set -o emacs
-PATH=$PATH:~/local/bin
+PATH=$PATH:~/dotFiles/scripts
 unset DLC
 alias ll="ls -alh"
 export PS1="\u@\h [\A] \$? \[$(tput sgr0)\]\[\033[38;5;11m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\n\\$ \[$(tput sgr0)\]"

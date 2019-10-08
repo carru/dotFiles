@@ -1,8 +1,7 @@
 #!/bin/bash
 echo "yab -p:http://yab.qad.com/wsvn/yab/ee/dev/module-dev/inventory/trunk/inventory-latest.properties"
 echo "yab -p:http://yab.qad.com/wsvn/yab/ee/dev/module-dev/inventory/trunk/inventory-dev.properties"
-echo "yab -p:http://yab.qad.com/wsvn/yab/recipes/sanmiguel2/2016/fin20171-core-qmi.properties"
-echo "yab -p:http://yab.qad.com/wsvn/yab/recipes/sanmiguel2/2016/fin20171-whole-qmi.properties"
+echo "yab -p:http://yab.qad.com/wsvn/yab/recipes/aux2020/2016/fin20171-core-prodorder-qmi-pc.properties"
 
 echo ""
 echo "yab reconfigure appserver-trim"

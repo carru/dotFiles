@@ -7,3 +7,6 @@ rm ius-release*rpm
 
 # Install tmux
 sudo yum -y install tmux2
+
+sudo yum -y install htop
+
