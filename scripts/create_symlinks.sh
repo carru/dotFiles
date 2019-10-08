@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # REPO_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-REPO_PATH="~/dotFiles"
+REPO_PATH=$HOME"/dotFiles"
 
 # tmux
-ln -sf $REPO_PATH/.tmux.conf ~/.tmux.conf
+ln -sf $REPO_PATH/.tmux.conf $HOME/.tmux.conf
 
 # vim
-ln -sf $REPO_PATH/.vimrc ~/.vimrc
+ln -sf $REPO_PATH/.vimrc $HOME/.vimrc
 
 # bashrc
-if [ -f ~/.bashrc ]; then
-	echo $REPO_PATH/.shell_customizations >> ~/.bashrc
+if [ -f $HOME/.bashrc ]; then
+	echo $REPO_PATH/.shell_customizations >> $HOME/.bashrc
 fi
