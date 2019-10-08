@@ -1,0 +1,26 @@
+## qol
+set -o emacs
+PATH=$PATH:~/local/bin
+unset DLC
+alias ll="ls -alh"
+export PS1="\u@\h [\A] \$? \[$(tput sgr0)\]\[\033[38;5;11m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\n\\$ \[$(tput sgr0)\]"
+
+
+## yab and env
+alias sis="yab module-installation-service-update tomcat-installation-service-start"
+alias restartqra="yab appserver-qra-stop appserver-qra-start"
+alias restartwebui="yab tomcat-webui-stop tomcat-webui-start"
+alias chui="/dr01/qadapps/systest/scripts/client-us"
+
+info() { yab info -depth:0 | grep -i "$1"; }
+dinfo() { run devel yab info -depth:0 | grep -i "$1"; }
+alias infor="yab -r && info"
+
+alias envinfo="yab env-info -more"
+
+clearlogs() { for f in *.log; do > $f; done }
+
+
+## scripts
+alias p=". ~/scripts/paths.sh"
+alias c=". ~/scripts/commands.sh"
