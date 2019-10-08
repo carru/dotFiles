@@ -11,5 +11,5 @@ ln -sf $REPO_PATH/.vimrc $HOME/.vimrc
 
 # bashrc
 if [ -f $HOME/.bashrc ]; then
-	echo $REPO_PATH/.shell_customizations >> $HOME/.bashrc
+	echo . $REPO_PATH/.shell_customizations >> $HOME/.bashrc
 fi
