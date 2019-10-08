@@ -22,5 +22,5 @@ clearlogs() { for f in *.log; do > $f; done }
 
 
 ## scripts
-alias p=". ~/scripts/paths.sh"
-alias c=". ~/scripts/commands.sh"
+alias p=". ~/dotFiles/scripts/paths.sh"
+alias c=". ~/dotFiles/scripts/commands.sh"
