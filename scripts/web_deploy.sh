@@ -2,7 +2,7 @@
 
 REPO_PATH="~/dotFiles"
 
-sudo yum install git
+sudo yum -y install git
 git clone https://github.com/carru/dotFiles.git ~/
 
 chmod +x $REPO_PATH/scripts/*.sh
