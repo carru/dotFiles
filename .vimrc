@@ -1,2 +1,2 @@
-:color evening 
+:color darkblue
 :set number
