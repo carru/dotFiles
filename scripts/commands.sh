@@ -9,6 +9,9 @@ echo "yab stop database-all-restore start"
 echo "yab stop database-rebuild mongodb-rebuild update"
 
 echo ""
+echo "yab -install-update:false install quality quality-api quality-proxy erp-quality-webui"
+
+echo ""
 echo "yab config dbserver.qaddb.sql.port"
 echo "yab -merge-settings:recipe -p:"
 echo "grep . -inre \"pattern\""
@@ -16,7 +19,6 @@ echo "find . -type f -size +100000k -exec ls -lh {} \;"
 echo "dyab update -failonerror:false"
 echo "devstore stop vm01106 -u devel -p 123"
 echo "devstore start vm01106 -u devel -p 123 -h 100 -w -role BPM"
-echo ". pset 11464"
 echo ". pset 11664"
 echo "pro -p memclient.p -b"
 echo "/tech/progress/dlc1173/bin/pro -p memclient-pc2.p -b"
@@ -29,8 +31,6 @@ echo "run devel rm ./databases/*.lk"
 echo "run devel rm ./databases/mongodbs/qad-collaboration/*.lock"
 echo "yab system-process-list update"
 echo
-echo "/qad/local/sandbox/user/devel/CATS_data/req/reqTrunk"
-echo "/dr01/cats_auto/apache-tomcat-9.0.0.M21/webapps/cats/req/reqTrunk (coli511)"
 echo "/qad/local/sandbox/user/devel/CATS_cronjobs/CATSScript/"
 
 echo
