@@ -16,6 +16,8 @@ info() { yab info -depth:0 | grep -i "$1"; }
 dinfo() { run devel yab info -depth:0 | grep -i "$1"; }
 alias infor="yab -r && info"
 
+install() { yab -install-update:false install $1; }
+
 alias envinfo="yab env-info -more"
 
 clearlogs() { for f in *.log; do > $f; done }
