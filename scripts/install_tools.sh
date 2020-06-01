@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Add IUS repo
-wget https://centos7.iuscommunity.org/ius-release.rpm
+wget https://repo.ius.io/ius-release-el7.rpm
 sudo rpm -Uvh ius-release*rpm
 rm ius-release*rpm
 
