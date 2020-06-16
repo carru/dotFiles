@@ -16,7 +16,8 @@ info() { yab info -depth:0 | grep -i "$1"; }
 dinfo() { run devel yab info -depth:0 | grep -i "$1"; }
 alias infor="yab -r && info"
 
-install() { yab -install-update:false install "$@"; }
+install() { yab -install-update:false -install-downgrade-allowed install "$@"; }
+install-bl-packages() { install "$1" "$1"-api "$1"-proxy; }
 meta-export() { yab metadata-export urn:app:com.qad."$1"; }
 
 alias envinfo="yab env-info -more"
@@ -27,4 +28,3 @@ clearlogs() { for f in *.log; do > $f; done }
 ## scripts
 alias p=". ~/dotFiles/scripts/paths.sh"
 alias c=". ~/dotFiles/scripts/commands.sh"
-
