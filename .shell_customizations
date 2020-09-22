@@ -17,7 +17,22 @@ dinfo() { run devel yab info -depth:0 | grep -i "$1"; }
 alias infor="yab -r && info"
 
 install() { yab -install-update:false -install-downgrade-allowed install "$@"; }
-install-bl-packages() { install "$1" "$1"-api "$1"-proxy; }
+installbl() {
+    if [ $# -eq 2 ]
+    then
+        install "$1"-"$2" "$1"-api-"$2" "$1"-proxy-"$2"
+    else
+        install "$1" "$1"-api "$1"-proxy
+    fi
+}
+installwebui() {
+    if [ $# -eq 2 ]
+    then
+        install erp-"$1"-webui-"$2"
+    else
+        install erp-"$1"-webui
+    fi
+}
 meta-export() { yab metadata-export urn:app:com.qad."$1"; }
 
 alias envinfo="yab env-info -more"
