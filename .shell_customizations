@@ -2,6 +2,9 @@
 set -o emacs
 PATH=$PATH:~/dotFiles/scripts
 . pset 1174_012
+. antset 1.8.4
+. jset 1.8.0_261
+. mvnset maven-3.2.5
 export DLC11=$DLC
 export TERM=xterm
 alias ll="ls -alh"
