@@ -1,7 +1,12 @@
 ## qol
 set -o emacs
 PATH=$PATH:~/dotFiles/scripts
-unset DLC
+. pset 1174_012
+. antset 1.8.4
+. jset 1.8.0_261
+. mvnset maven-3.2.5
+export DLC11=$DLC
+export TERM=xterm
 alias ll="ls -alh"
 export PS1="\u@\h [\A] \$? \[$(tput sgr0)\]\[\033[38;5;11m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\n\\$ \[$(tput sgr0)\]"
 
