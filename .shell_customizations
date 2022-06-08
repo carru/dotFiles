@@ -33,6 +33,10 @@ installwebui() {
         install erp-"$1"-webui
     fi
 }
+installall() {
+    installbl "$1"
+    installwebui "$1"
+}
 meta-export() { yab metadata-export urn:app:com.qad."$1"; }
 
 alias envinfo="yab env-info -more"
