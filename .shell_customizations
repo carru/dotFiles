@@ -1,7 +1,7 @@
 ## qol
 set -o emacs
 PATH=$PATH:~/dotFiles/scripts
-. pset 1174_012
+. pset 11712
 . antset 1.8.4
 . jset 1.8.0_261
 . mvnset maven-3.2.5
